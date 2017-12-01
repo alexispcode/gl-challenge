@@ -1,0 +1,7 @@
+<div class="wrapper text-center" *ngIf="isLoading">
+  <span class="spinner">
+    Loading...
+  </span>
+</div>
+
+<ng-content *ngIf="!isLoading"></ng-content>

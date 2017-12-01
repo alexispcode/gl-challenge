@@ -1,0 +1,14 @@
+<table class="table table-noborder">
+  <thead>
+    <tr>
+      <th class="left">Email</th>
+      <th class="left">Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let comment of comments">
+      <td class="left"><a href="mailto:{{comment.email}}">{{comment.email}}</a></td>
+      <td class="left">{{comment.body}}</td>
+    </tr>
+  </tbody>
+</table>

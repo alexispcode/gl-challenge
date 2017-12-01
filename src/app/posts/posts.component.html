@@ -1,0 +1,11 @@
+<section>
+  <h1>All Posts</h1>
+
+  <article class="row">
+    <app-post
+      *ngFor="let post of posts | async"
+      [post]="post"
+      class="col-lg-4 col-md-7 col-sm-12 col-xs-12">
+    </app-post>
+  </article>
+</section>

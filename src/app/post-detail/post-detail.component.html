@@ -1,0 +1,8 @@
+<div *ngIf="post | async; let post;">
+  <h1>{{ post.title | capitalize }}</h1>
+  <p>{{ post.body | capitalize }}</p>
+
+  <app-post-comments [comments]="post?.comments"></app-post-comments>
+</div>
+
+<a class="btn btn-outline goback" (click)="goBack()">Go back</a>
